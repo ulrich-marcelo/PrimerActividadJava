@@ -2,11 +2,11 @@ public class Lamparita {
     public static void main(String[] args) throws Exception {
         System.out.println("Vamos a programar una lamparita! ");
         Lamparita pepe = new Lamparita();
-        pepe.estaEncendida();
+        System.out.println(pepe.estaEncendida());
         pepe.encender();
-        pepe.estaEncendida();
+        System.out.println(pepe.estaEncendida());
         pepe.apagar();
-        pepe.estaEncendida();
+        System.out.println(pepe.estaEncendida());
     }
 
     private boolean encendida = false;
@@ -19,8 +19,12 @@ public class Lamparita {
         encendida = false;
     }
 
-    public void estaEncendida(){
-        System.out.println(encendida); 
+    public boolean estaEncendida(){
+         return encendida;
+    }
+
+    public void parpadear(){
+        System.out.println("Aca parpadearia");
     }
 
 
